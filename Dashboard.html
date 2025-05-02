@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ParcelPro Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-green-600 text-white px-4 py-3 fixed w-full z-10 shadow">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-xl font-bold">ParcelPro Dashboard</div>
+      <div>
+        <a href="RushHut.html" class="bg-white text-green-600 px-4 py-1 rounded hover:bg-gray-100 font-semibold">Logout</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Layout -->
+  <div class="flex pt-16">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white shadow-md h-screen hidden md:block">
+      <div class="p-4">
+        <h2 class="text-lg font-semibold text-green-700 mb-4">Navigation</h2>
+        <ul class="space-y-2">
+          <li><a href="#" class="block px-3 py-2 rounded hover:bg-green-100 text-green-700 font-medium">All Products</a></li>
+          <li><a href="#" class="block px-3 py-2 rounded hover:bg-green-100">Pending</a></li>
+          <li><a href="#" class="block px-3 py-2 rounded hover:bg-green-100">Shipped</a></li>
+          <li><a href="#" class="block px-3 py-2 rounded hover:bg-green-100">Delivered</a></li>
+          <li><a href="#" class="block px-3 py-2 rounded hover:bg-green-100">Cancelled</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+      <h1 class="text-2xl font-bold text-green-700 mb-4">All Products</h1>
+
+      <!-- Products Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <!-- Product Card -->
+        <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-lg font-semibold text-gray-800">Parcel #001</h3>
+          <p class="text-sm text-gray-500">Status: <span class="text-yellow-600">Pending</span></p>
+        </div>
+        <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-lg font-semibold text-gray-800">Parcel #002</h3>
+          <p class="text-sm text-gray-500">Status: <span class="text-blue-600">Shipped</span></p>
+        </div>
+        <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-lg font-semibold text-gray-800">Parcel #003</h3>
+          <p class="text-sm text-gray-500">Status: <span class="text-green-600">Delivered</span></p>
+        </div>
+        <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+          <h3 class="text-lg font-semibold text-gray-800">Parcel #004</h3>
+          <p class="text-sm text-gray-500">Status: <span class="text-red-600">Cancelled</span></p>
+        </div>
+        <!-- Add more cards as needed -->
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
